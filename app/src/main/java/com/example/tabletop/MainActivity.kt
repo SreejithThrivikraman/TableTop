@@ -23,10 +23,15 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+@Composable
+fun Greeting(){
+   Text(text = "Hello Sreejith !")
+}
+
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
     TableTopTheme {
-        Greeting("Android")
+        Greeting()
     }
 }
